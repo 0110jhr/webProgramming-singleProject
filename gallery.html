@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>포트폴리오-test</title>
+    <link href="./css/fonts.css" type="text/css" rel="stylesheet" />
+    <link href="./css/main.css" type="text/css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/df6c32eea8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      /* 스타일을 정의합니다. */
+      .section-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-container,
+      .text-container {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .line-container {
+        position: relative;
+      }
+
+      .line {
+        position: absolute;
+        left: 50%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        height: 300px;
+      }
+
+      .line div {
+        border-left: thick solid #2d383b;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <!------------------------- 본 내용 ------------------------->
+  <body>
+    <header>
+      <a href="index.html">
+        <h1>Portfolio</h1>
+      </a>
+      <h6>everything about me</h6>
+    </header>
+
+    <nav style="padding: 0px 15%">
+      <hr />
+      <ul id="menu">
+        <li><a href="./work.html">work</a></li>
+        <li><a href="./like.html">enjoy</a></li>
+        <li><a href="./gallery.html">gallery</a></li>
+      </ul>
+      <hr />
+      <br />
+    </nav>
+
+    <main>
+      <section>
+        <div id="block">
+          <article id="title" style="position: relative; z-index: 1">
+            <div style="display: flex">
+              <!-- 왼쪽 div (이미지) -->
+              <div style="flex: 1; float: right">
+                <div class="slider" style="margin: 0px 0px 0px 80px">
+                  <div class="slides">
+                    <div id="slide-1">
+                      <img
+                        src="./image/gallery/2019.8.18(1).JPG"
+                        style="width: 80%"
+                      />
+                    </div>
+
+                    <div id="slide-2">
+                      <img
+                        src="./image/gallery/2019.8.18(2).JPG"
+                        style="width: 80%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 세로선 div (가운데 정렬) -->
+              <div style="position: absolute; left: 50%; z-index: 2">
+                <div
+                  style="
+                    border-left: thick solid #2d383b;
+                    height: 62em;
+                    padding: 20px;
+                  "
+                ></div>
+              </div>
+
+              <!-- 오른쪽 div (텍스트 설명) -->
+              <div style="flex: 1; margin-left: 100px; display: flex; justify-content: left; align-items: center; text-align: left;">
+                <p>
+                  2019.8.18 <br />
+                  서울 인사동 전시
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-------------------------- 다음 블럭..-------------------------->
+          <article id="title" style="position: relative; z-index: 1">
+            <div style="display: flex">
+              <!-- 왼쪽 div (이미지) -->
+              <div style="flex: 1; margin-right: 100px; display: flex; justify-content: right; align-items: center; text-align: right;">
+                <p>
+                  2019.12.16<br />
+                  부천 수족관
+                </p>
+              </div>
+
+              <!-- 오른쪽 div (텍스트 설명) -->
+              <div style="flex: 1; margin-left: 100px">
+                <img src="./image/gallery/2019.12.16.JPG" style="width: 80%" />
+              </div>
+            </div>
+          </article>
+
+          <!-------------------------- 다음 블럭..-------------------------->
+          <article id="title" style="position: relative; z-index: 1">
+            <div style="display: flex">
+              <!-- 왼쪽 div (이미지) -->
+              <div style="flex: 1; float: right">
+                <div class="slider">
+                  <div class="slides">
+                    <div id="slide-1">
+                      <img
+                        src="./image/gallery/2020.4.17(1).JPG"
+                        style="width: 90%"
+                      />
+                    </div>
+
+                    <div id="slide-2">
+                      <img
+                        src="./image/gallery/2020.4.17(2).JPG"
+                        style="width: 90%"
+                      />
+                    </div>
+
+                    <div id="slide-3">
+                      <img
+                        src="./image/gallery/2020.4.17(3).JPG"
+                        style="width: 90%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 오른쪽 div (텍스트 설명) -->
+              <div style="flex: 1; margin-left: 100px; display: flex; justify-content: left; align-items: center; text-align: left;">
+                <div style="display: block;">
+                    <p>
+                     2020.4.17<br />집앞 가로등 </p>
+                    <br>
+                    <p style="font-size: 20px; font-family: 'NanumSquareR';">
+                    무언가 도전적인 시도를 해봤네요 ㅎㅎ
+                    </p>
+                </div>
+
+              </div>
+              
+            </div>
+          </article>
+
+          <!-------------------------- 다음 블럭..-------------------------->
+          <article id="title" style="position: relative; z-index: 1">
+            <div style="display: flex">
+              <!-- 왼쪽 div (이미지) -->
+              <div style="flex: 1; margin-right: 100px; display: flex; justify-content: right; align-items: center; text-align: right;">
+                <p>
+                  2020.5.15<br />
+                  경복궁
+                </p>
+              </div>
+
+
+              <!-- 오른쪽 div (텍스트 설명) -->
+              <div style="flex: 1; margin-left: 100px">
+                <img src="./image/gallery/2020.5.15.JPG" style="width: 80%" />
+              </div>
+            </div>
+          </article>
+
+          <!-------------------------- 다음 블럭..-------------------------->
+          <article id="title" style="position: relative; z-index: 1">
+            <div style="display: flex">
+              <!-- 왼쪽 div (이미지) -->
+              <div style="flex: 1; float: right">
+                <div class="slider">
+                  <div class="slides">
+                    <div id="slide-1">
+                      <img
+                        src="./image/gallery/2020.9.13(1).jpeg"
+                        style="width: 50%"
+                      />
+                    </div>
+
+                    <div id="slide-2">
+                      <img
+                        src="./image/gallery/2020.9.13(2).jpeg"
+                        style="width: 50%"
+                      />
+                    </div>
+
+                    <div id="slide-3">
+                      <img
+                        src="./image/gallery/2020.9.13(3).jpeg"
+                        style="width: 50%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 오른쪽 div (텍스트 설명) -->
+              <div style="flex: 1; margin-left: 100px; display: flex; justify-content: left; align-items: center; text-align: left;">
+                <p>
+                  2020.9.13<br />
+                  평택호
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-------------------------- 다음 블럭..-------------------------->
+          <article id="title" style="position: relative; z-index: 1">
+            <div style="display: flex">
+              <!-- 왼쪽 div (이미지) -->
+              <div style="flex: 1; margin-right: 100px; display: flex; justify-content: right; align-items: center; text-align: right;">
+                <p>
+                  2022.11.24<br />
+                  개기월식
+                </p>
+              </div>
+
+              <!-- 오른쪽 div (텍스트 설명) -->
+              <div style="flex: 1; margin-left: 100px">
+                <img src="./image/gallery/2022.11.24.JPG" style="width: 80%" />
+              </div>
+            </div>
+          </article>
+
+          <!-------------------------- 다음 블럭..-------------------------->
+          <article id="title" style="position: relative; z-index: 1">
+            <div style="display: flex">
+              <!-- 왼쪽 div (이미지) -->
+              <div style="flex: 1; text-align: right">
+                <img src="./image/gallery/2023.9.3.JPG" style="width: 80%" />
+                </p>
+              </div>
+
+              <!-- 오른쪽 div (텍스트 설명) -->
+              <div style="flex: 1; margin-left: 100px; display: flex;  align-items: center;">
+                <p>
+                    2023.8.31<br />
+                    슈퍼 블루문
+                
+              </div>
+              
+            </div>
+            <div style="margin-bottom: 40px;"></div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/ran8461/"
+              class="fa-brands fa-instagram fa-3x"
+            >
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="mailto:0110jhr@gmail.com"
+              class="fa-regular fa-envelope fa-3x"
+            >
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          Hoseo univ<br />
+          Department of Computer Engineering<br />
+          20211020 Hyeran Jung<br />
+          -----------------------------------------<br />
+          Web Programming[04] Personal Assignment | 23.11<br />
+        </p>
+      </div>
+      <br />
+    </footer>
+  </body>
+</html>
